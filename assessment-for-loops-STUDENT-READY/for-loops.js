@@ -12,8 +12,10 @@
   function addNumbers(value){
       var myNumbers = []
       //Code here
-      
-      
+      for (let i = 0; i < value; i++) {
+        myNumbers.push(i);
+      }
+      return myNumbers;
   }
 
 
@@ -27,5 +29,8 @@
   function canYouHearMe(param){
 
     //Code here
-
+    for(let i = 0; i < 10; i++) {
+      param += hello();
+    }
+    return param;
   }  

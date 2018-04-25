@@ -1,8 +1,8 @@
 //========= DO NOT TOUCH THIS CODE =========//
 var testing = {
-    a: hey ? true : false,
-    b: hi ? true : false,
-    c: hello ? true : false,
+  a: hey ? true : false,
+  b: hi ? true : false,
+  c: hello ? true : false,
 }
 //============= CONTINUE BELOW =============//
 //+++++++++ Start Here! All problems are below. +++++++++//
@@ -13,7 +13,9 @@ var testing = {
 //the string "Hey " plus the name.
 
 //Code here
-
+function hey(name){
+return "Hey " + name;
+}
 
 ///////////////////Problem 2//////////////////
 //Create a function called hi, using a function
@@ -21,7 +23,9 @@ var testing = {
 //the string "Hi " plus the name.
 
 //Code here
-
+var hi = function(name){
+return "Hi "+ name;
+}
 
 ///////////////////Problem 3//////////////////
 //Create a function called hello, using an arrow
@@ -29,7 +33,7 @@ var testing = {
 //the string "Hello " plus the name.
 
 //Code here
-
+var hello = name => `Hello ${name}`;
 
 ///////////////////Problem 4//////////////////
 //Create a function named fun, which takes in
@@ -39,7 +43,8 @@ var testing = {
 //variable called funTimes.
 
 //Code here
-
+var fun = str => `${str}!!!!!`
+var funTimes = fun('Yay');
 
 ///////////////////Problem 5//////////////////
 //Finish the function 'climb' below. Use the built-in local
@@ -67,6 +72,15 @@ function climb(){
   console.log('function climb\'s local arguments var - ', arguments)
 
   //CODE HERE - DO NOT TOUCH THE CODE ABOVE!
-  
+
+  if(arguments[0] && typeof arguments[0] === 'string'){
+    if(arguments[1]===true){
+      return 'Climbing!'
+    } else {
+    return "On belay?"
+    } 
+  } else {
+    return "Let's set up the belay rope before we climb."}
+
 
 }
